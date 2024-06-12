@@ -1,4 +1,4 @@
-<DOCUMENT> html>
+<DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,13 +46,22 @@
             transition: background-color 0.3s ease;
         }
         .button:hover {
-            background-color: #0056b3;
+            background-color: #45a049;
         }
-        /* Style for icons */
-        .icon {
-            color: #fff;
-            font-size: 24px;
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-icon {
             margin: 0 10px;
+            font-size: 2em;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-icon:hover {
+            color: #c0c0c0;
         }
     </style>
 </head>
@@ -64,8 +73,10 @@
         <p>Additionally, the internet facilitates communication with family and friends living in distant places, bridging the gap between urban and rural areas. E-commerce platforms enable villagers to sell their products to a broader market, enhancing their economic prospects.</p>
         <p>Overall, the internet is transforming villages by providing them with tools and information that drive growth and development, making rural life more connected and informed.</p>
         <!-- Contact and email icons with links -->
-        <a href="Contact.html" class="icon"><i class="fas fa-phone"></i></a>
-        <a href="email.html" class="icon"><i class="fas fa-envelope"></i></a>
+         <div class="contact-icons">
+            <a href="email.html" class="contact-icon">&#9993;</a>
+            <a href="contact.html" class="contact-icon">&#x1F4F1;</a>
+        </div>
         <!-- Explore More button -->
         <a href="Explore.html" class="button">Explore More</a>
     </div>
